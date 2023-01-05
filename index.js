@@ -17,8 +17,9 @@ Do the following:
    1. Create a variable called votingAge and assign it a number value
    2. Console log true if age is 18 or higher
 
-   HINT: no function required   
-const votingAge = 18;
+   HINT: no function required
+*/
+const votingAge = 18; 
 
 if(votingAge >=18){
   console.log('task 1 a:',true);
@@ -37,11 +38,14 @@ Do the following:
    4. Console log the value of the 1st variable
 
    HINT: no function required
+*/
 let dog  = 'Ada'; 
 let behaviour = 'bad'; 
 
 if(behaviour === 'bad'){
   dog = 'Noa'
+}else{
+
 }
 
 console.log('task 1 b:', dog);
@@ -58,7 +62,8 @@ Do the following:
    3. Console log the result
 
    HINT: look up the Number method
-const party = 1999
+*/
+const party = '1999';
 console.log('task 1 c:', Number(party));
 
 
@@ -77,7 +82,7 @@ function multiply(a, b){
   return a * b;
 }
 
-console.log('task 1 d:', multiply(9, 9));
+console.log('task 1 d:', multiply(3, 2));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -90,7 +95,7 @@ Do the following:
 */
 
 function dogYears(age){
-  return age * 7
+  return age * 7;
 
 }
 
@@ -143,22 +148,22 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
 */  
 
 function hungryDog(weight, age){
-  if(age >= 1 && weight <=5){
+  if(age >= 1 && weight <= 5){
     return weight * 0.05; 
-  }else if(age >=1 && weight >=6 && weight <=10){
+  }else if(age >= 1 && weight >= 6 && weight <= 10){
     return weight * 0.04
-  }else if (age >=1 && weight >=11 && weight <=15){
+  }else if (age >= 1 && weight >= 11 && weight <= 15){
     return weight * 0.03; 
   }else if(age >= 1  && weight > 15){
     return weight * 0.02; 
   }else if(age < 1 && age >= 0.583){
     return weight * 0.04;
-  }else if(age < 0.583 && age >=0.333){
+  }else if(age < 0.583 && age >= 0.333){
     return weight * 0.05; 
   }else if (age < 0.333){
     return weight * 0.10;  
   }else{
-    return 'please try again;'
+    return 'please try again';
   }
 }
 
@@ -186,9 +191,9 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 */
 let computer = Math.random();
 
-if(computer <=0.34){
+if(computer <= 0.34){
   computer = 'rock';
-}else if(computer <=0.67){
+}else if(computer <= 0.67){
   computer = 'paper';
 }else if(computer > 0.67){
   computer = 'sissors';
@@ -266,7 +271,7 @@ function annoyingSong(number){
 }
 
 console.log('task 6', annoyingSong(8));
-
+console.log('task 6', annoyingSong(7));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -286,19 +291,18 @@ Using the grade function below do the following:
 function grade(number){
   if(number >= 90){
     return `you got an A`;
-  }else if(number < 90 && number >= 80){
+  }else if(number >= 80){
     return `you got a B`;
-  }else if(number < 70 && number >= 70){
+  }else if(number >= 70){
     return `you got a C`;
-  }else if(number < 70 && number >= 60){
+  }else if(number >= 60){
     return `you got a D`;
-  }else if(number <60){
+  }else {
   return `you got an F`;
 }
 }
 
-
-console.log(`task 7`,grade(85));
+console.log(`task 7`, grade(92));
 
 
 
